@@ -44,7 +44,7 @@ const projects =
     {
       "name": "Escpace collaboratifs",
       "desc": "Conception et realisation d'un application pour la collaboration interne entre ses personnels.",
-      "image": "chu",
+      "image": "ge",
       "category": "mern",
       "links": {
         "view": "#",
