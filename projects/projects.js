@@ -2,12 +2,42 @@ const projects =
 
 [
     {
-      "name": "Portail de la DGI",
-      "desc": "Mis en place d'une application pour un portail d’administration à des nombreux contribuables existants à Madagascar.",
-      "image": "portal",
-      "category": "basicweb",
+      "name": "La Beauté Française",
+      "desc": "Marketplace B2B spécialisée dans la promotion de la beauté française.",
+      "image": "labeaute",
+      "category": "laravel nuxt",
       "links": {
-        "view": "#",
+        "view": "https://www.labeautefrancaise.com",
+        "code": "#"
+      }
+    },
+    {
+      "name": "MyScaleBiz",
+      "desc": "Application alimentée par l'intelligence artificielle qui génère des idées innovantes de business adaptées à vos besoins.",
+      "image": "myscalebiz",
+      "category": "laravel nuxt",
+      "links": {
+        "view": "https://www.myscalebiz.com",
+        "code": "#"
+      }
+    },
+    {
+      "name": "Ryl adduction",
+      "desc": "RylAdduction est une application dédiée à l'enseignement, à la formation, et aux services liés aux matériels hydrauliques.",
+      "image": "ryladduction",
+      "category": "laravel nuxt",
+      "links": {
+        "view": "https://ryladduction.com",
+        "code": "#"
+      }
+    },
+    {
+      "name": "ZENITH AEROTECHNICS",
+      "desc": "Homologuée par l’Association du Transport Aérien International IATA pour les composants qui assurent la connectique entre le camion et l’avion.",
+      "image": "zenith",
+      "category": "symfony react",
+      "links": {
+        "view": "http://preprod.zenith.cestnous.fr",
         "code": "#"
       }
     },
@@ -45,7 +75,7 @@ const projects =
       "name": "Escpace collaboratifs",
       "desc": "Conception et realisation d'un application pour la collaboration interne entre ses personnels.",
       "image": "ge",
-      "category": "mern",
+      "category": "codeigniter",
       "links": {
         "view": "#",
         "code": "#"
@@ -55,7 +85,7 @@ const projects =
       "name": "Besoins matériels",
       "desc": "Informatiser les demandes et les transferts des matériels entre les services de la Caisse d’Epargne de Madagascar",
       "image": "caisse",
-      "category": "mern",
+      "category": "java",
       "links": {
         "view": "#",
         "code": "#"
