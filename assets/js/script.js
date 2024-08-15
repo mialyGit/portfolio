@@ -38,19 +38,57 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+    // $("#contact-form").submit(function (event) {
+        // emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
+        // emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        //     .then(function (response) {
+        //         console.log('SUCCESS!', response.status, response.text);
+        //         document.getElementById("contact-form").reset();
+        //         alert("Form Submitted Successfully");
+        //     }, function (error) {
+        //         console.log('FAILED...', error);
+        //         alert("Form Submission Failed! Try Again");
+        //     });
+        // event.preventDefault();
+
+        $('#contact-form').on('submit', function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+    
+            // Activer le loader
+            var submitButton = $('#submit-button');
+            submitButton.html('Envoi en cours <i class="fa fa-spinner fa-spin" style="top: 2px;font-size: 2rem;"></i>');
+            submitButton.prop('disabled', true);
+    
+             // Récupérer les données du formulaire
+                var formArray = $(this).serializeArray();
+                
+
+
+                fetch("https://api.callmebot.com/facebook/send.php?apikey=vNCSBzOixENi2cPs&text=" + encodeURI(JSON.stringify(formArray)), {
+                    method : 'GET',
+                    mode : 'no-cors'
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response was not ok: ${response.status}`);
+                    }
+                    return response.json(); // This parses the response body as JSON
+                })
+                .then(data => {
+                    alert('Message envoyé avec succès !');
+        
+                    // Réinitialiser le formulaire
+                    $('#contact-form')[0].reset();
+                })
+                .catch(error => {
+                    // Handle errors
+                    alert('Une erreur est survenue. Veuillez réessayer.');
+                }).finally(() => {
+                    submitButton.html('Envoyer <i class="fa fa-paper-plane"></i>');
+                    submitButton.prop('disabled', false);
+                });
+        //     // Envoyer les données avec AJAX
     });
     // <!-- emailjs to mail contact form data -->
 
