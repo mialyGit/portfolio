@@ -1,6 +1,14 @@
 const skills =
 [
     {
+        "name": "Laravel",
+        "icon": "https://img.icons8.com/?size=100&id=hUvxmdu7Rloj&format=png&color=000000"
+    },
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    },
+    {
         "name": "JavaScript",
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
     },
@@ -9,20 +17,20 @@ const skills =
         "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
     },
     {
-        "name": "PHP",
-        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+        "name": "NodeJS",
+        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
     {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },
-    {
-        "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+        "name": "Symfony",
+        "icon": "https://img.icons8.com/?size=100&id=78295&format=png&color=000000"
     },
     {
         "name": "ReactJS",
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "jQuery",
+        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
     },
     {
         "name": "VueJS",
@@ -33,22 +41,10 @@ const skills =
         "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
     },
     {
-        "name": "NodeJS",
-        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
-    },
-    
-    // {
-    //     "name": "Redux",
-    //     "icon": "https://img.icons8.com/color/48/000000/redux.png"
-    // },
-    {
         "name": "Puppeteer",
         "icon": "https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png"
     },
-    {
-        "name": "jQuery",
-        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
-    },
+
     {
         "name": "Android",
         "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
@@ -56,6 +52,10 @@ const skills =
     {
         "name": "ReactNative",
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "Flutter",
+        "icon": "https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png&color=000000"
     },
     {
         "name": "HTML5",
@@ -105,17 +105,25 @@ const skills =
         "name": "Firebase",
         "icon": "https://img.icons8.com/color/48/000000/firebase.png"
     },
+    // {
+    //     "name": "AWS",
+    //     "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    // },
+    // {
+    //     "name": "Heroku",
+    //     "icon": "https://img.icons8.com/color/48/000000/heroku.png"
+    // },
+    // {
+    //     "name": "Netlify",
+    //     "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    // },
     {
-        "name": "AWS",
-        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+        "name": "Open AI",
+        "icon": "https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000"
     },
     {
-        "name": "Heroku",
-        "icon": "https://img.icons8.com/color/48/000000/heroku.png"
-    },
-    {
-        "name": "Netlify",
-        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+        "name": "Captcha Solver",
+        "icon": "https://img.icons8.com/?size=100&id=wWXjhreryCHQ&format=png&color=000000"
     },
     // {
     //     "name": "DigitalOcean",
@@ -136,5 +144,9 @@ const skills =
     {
         "name": "WordPress",
         "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    }    
+    },   
+    // {
+    //     "name": "C++",
+    //     "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    // },
 ]
