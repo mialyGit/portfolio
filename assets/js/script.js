@@ -37,6 +37,11 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
+    var currentYear = new Date().getFullYear();
+    var birthYear = 2001;
+
+    $('#myage').text(currentYear - birthYear);
+
     // <!-- emailjs to mail contact form data -->
     // $("#contact-form").submit(function (event) {
         // emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
